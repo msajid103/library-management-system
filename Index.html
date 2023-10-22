@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js" defer></script>
+</head>
+
+
+
+
+<body>
+
+    <!-- _______________________ Header Section______________________ -->
+    <header>
+        <a href="#home" class="logo"><span>L</span>MS</a>
+        <nav class="navbar">
+            <a class="nav-btn current" href="#home">Home</a>
+            <a class="nav-btn" href="#book">Books</a>
+            <a class="nav-btn" href="#">About Us</a>
+            <a class="nav-btn" href="#">services</a>
+            <a class="nav-btn" href="#">gallery</a>            
+            <a class="nav-btn" href="#">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user fa-times" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- ___________x___________ Header Section__________x___________ -->
+
+    <!-- _______________________    Login Form  ______________________ -->
+    <div class="login-form-container">
+        <i class="fa fa-times" id="form-close"></i>
+        <form action="">
+            <h1>login</h1>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <button class="login-btn btn">login now</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forgot password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+    </div> 
+
+    <!-- ___________x___________    Login Form  __________x___________ -->
+    <!-- _______________________  HOME SECTION  ______________________ -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h1>Library management system</h1>
+        <p>catalog</p>
+        <form action="" class="catalog-form">
+            <input type="search" class="search" placeholder="search here...">
+            <button class="btn ">Submit</button>            
+        </form>
+
+    </div>   
+    <div class="video-container">
+        <video src="./assets/video/production ID-3703474.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+   
+</section>
+
+
+
+    <!-- ___________x___________  HOME SECTION  __________x___________ -->
+
+</body>
+
+</html>
