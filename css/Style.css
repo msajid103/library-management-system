@@ -315,3 +315,39 @@ margin-left: .2rem;
 
 
 /* ___________x___________  HOME SECTION  __________x___________  */
+
+ /* ______________________  Search Results  _____________________  */
+.search-results{
+    margin-top: 4rem;
+width: 80%;
+margin: auto;
+}
+
+.search-results .main_heading{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 5rem;
+}
+.search-results .card{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.card .img{
+width: 40%;
+}
+.card .img img{
+    width: 100%;
+}
+.card .content{
+width: 50%;
+margin-left: 2rem;
+}
+.card .content h1{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.card .content h1 span{
+    font-size: 2.5rem;
+}
