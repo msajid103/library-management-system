@@ -1,0 +1,357 @@
+@import url('../css/fonts.css');
+@import url('../css/all.css');
+
+:root {
+    --orange: #ffa500;
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Livvic);
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--orange);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 9%;
+}
+
+/* _______________________ Global Classes______________________  */
+.btn{
+    background: var(--orange);
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    padding: .8rem 3rem;
+    display: inline-block;
+    border-radius: .3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(255, 165, 0, .4);
+    border: 1px solid var(--orange);
+
+}
+
+
+/* ___________x___________ Global Classes___________x__________  */
+/* _______________________ Header Section______________________  */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    font-family: var(--Livvic);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: var(--orange);
+
+}
+
+header .navbar a {
+    font-family: var(--Abel);
+    color: #fff;
+    font-size: 2rem;
+    margin: .8rem;
+}
+
+header .navbar .current{
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+form.search-bar-container {
+    display: none;
+    background: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+
+}
+
+form.active {
+    display: block;
+}
+
+form.search-bar-container #search-bar {
+    width: 95%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+
+}
+
+form.search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+
+}
+
+form.search-bar-container label:hover {
+    color: #ffa500;
+}
+
+/* ______________x________ Header Section__________x___________  */
+
+
+/* _______________________   Login Form  ______________________  */
+.login-form-container {
+    position: fixed;
+    top: -200%;
+    left: 0;
+    z-index: 101;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, .7);
+}
+
+.login-form-container form {
+    position: absolute;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    /* height: 45rem; */
+    /* top: 0; */
+    /* left: 0; */
+
+    backdrop-filter: blur(10px);
+    /* border: 1px solid var(--orange); */
+}
+.login-form-container form h1 {
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    margin: 1rem 0;
+    padding: 1rem ;
+    font-size: 1.5rem;
+    border: 1px solid #333;
+    border-radius: .2rem;
+    width: 100%;
+
+}
+.login-form-container form .box:focus{
+    border-color: var(--orange);
+}
+.login-form-container .login-btn{
+   width: 100%;
+   display: block;
+   margin: 1rem 0;
+   font-size: 2rem;    
+}
+
+.login-form-container form #remember{
+    margin: 1rem 0;
+}
+.login-form-container form label{
+font-size: 1.5rem;
+margin-left: .2rem;
+}
+.login-form-container form p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #666;
+}
+
+.login-form-container form a{
+    color: var(--orange);
+}
+
+.login-form-container form a:hover{
+    /* color: #666; */
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    top: 3.5%;
+    right: 9%;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.login-form-container #form-close:hover{
+    color: var(--orange);
+}
+
+/* ___________x___________   Login Form  ___________x__________  */
+
+/* _______________________  HOME SECTION  ______________________  */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgb(0, 0, 0, .1);
+}
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+
+}
+
+.home .video-container video{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgb(0, 0, 0, .7);
+    position: relative;
+    top: 10rem;
+}
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.catalog-form .search {
+    
+        width: 75%;
+        padding: 1rem;
+        text-transform: none;
+        color: #333;
+        font-size: 1.7rem;
+        border-radius: .5rem;
+    
+    
+}
+
+
+/* ___________x___________  HOME SECTION  __________x___________  */
+
+ /* ______________________  Search Results  _____________________  */
+.search-results{
+    margin-top: 4rem;
+width: 80%;
+margin: auto;
+}
+
+.search-results .main_heading{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 5rem;
+}
+.search-results .card{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.card .img{
+width: 40%;
+}
+.card .img img{
+    width: 100%;
+}
+.card .content{
+width: 50%;
+margin-left: 2rem;
+}
+.card .content h1{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.card .content h1 span{
+    font-size: 2.5rem;
+}
+
+.user h1{
+color:white;
+}
